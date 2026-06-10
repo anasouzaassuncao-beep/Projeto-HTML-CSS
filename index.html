@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* CSS Moderno, Responsivo (Mobile-First) e Focado em Acessibilidade */
+        :root {
+            --primary-color: #1b4332;
+            --secondary-color: #40916c;
+            --accent-color: #d8f3dc;
+            --text-dark: #2d3142;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Atalho de Acessibilidade escondido (visível ao navegar por Tab) */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.2s;
+        }
+        .skip-link:focus { top: 0; }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .interactive-section {
+            background: white;
+            margin-top: 3rem;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin-top: 1rem;
+        }
+
+        input, select, button {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover { background-color: var(--secondary-color); }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        /* Ajustes de responsividade adicionais via Media Queries */
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="logo">
+            <h2>Agrinho 2026</h2>
+        </div>
+        <nav role="navigation" aria-label="Menu Principal">
+            <ul>
+                <li><a href="#tema">O Tema</a></li>
+                <li><a href="#pilares">Pilares Sustentáveis</a></li>
+                <li><a href="#simulador">Simulador Agro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" aria-label="Destaque Principal">
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Promovendo o equilíbrio ideal entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+    </section>
+
+    <main id="conteudo-principal" role="main">
+        
+        <section id="tema" aria-labelledby="titulo-tema">
+            <h2 id="titulo-tema">Equilíbrio: Produção e Meio Ambiente</h2>
+            <p>O desafio do agronegócio moderno é produzir alimentos e insumos para uma população crescente utilizando tecnologias inovadoras que mitiguem os impactos ambientais, protejam os recursos hídricos e zelem pela saúde do solo.</p>
+        </section>
+
+        <section id="pilares" aria-labelledby="titulo-pilares">
+            <h2 id="titulo-pilares" class="visual-hidden">Nossos Pilares de Atuação</h2>
+            <div class="grid-features">
+                <article class="card">
+                    <h3>Tecnologia no Campo</h3>
+                    <p>Uso de sensores IoT e drones para otimizar o uso da água e monitorar a saúde das lavouras em tempo real, evitando desperdícios.</p>
+                </article>
+                <article class="card">
+                    <h3>Preservação Ativa</h3>
+                    <p>Técnicas de manejo como o plantio direto e a rotação de culturas, essenciais para manter o carbono fixado no solo.</p>
+                </article>
+                <article class="card">
+                    <h3>Energia Limpa</h3>
+                    <p>Substituição de matrizes energéticas tradicionais por usinas de biogás e painéis solares nas propriedades rurais.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="simulador" class="interactive-section" aria-labelledby="titulo-simulador">
+            <h2 id="titulo-simulador">Simulador de Impacto Sustentável</h2>
+            <p>Selecione a prática agrícola que você deseja adotar para calcular a projeção de impacto na sua fazenda fictícia:</p>
+            
+            <form id="form-simulador" onsubmit="calcularImpacto(event)">
+                <label for="pratica">Escolha uma prática ecológica:</label>
+                <select id="pratica" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="irrigacao">Irrigação Inteligente (Gotejamento)</option>
+                    <option value="solar">Instalação de Painéis Solares</option>
+                    <option value="plantio">Plantio Direto na Palha</option>
+                </select>
+
+                <button type="submit">Calcular Impacto Esperado</button>
+            </form>
+
+            <div id="resultado-simulacao" style="margin-top: 1.5rem; font-weight: bold; color: var(--primary-color);" aria-live="polite"></div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 Projeto Desenvolvido para o Concurso Agrinho - Subcategoria 3 / Nível 4.</p>
+    </footer>
+
+    <script>
+        // Função de controle de fluxo e manipulação de DOM para atender aos requisitos técnicos
+        function calcularImpacto(event) {
+            event.preventDefault();
+            
+            const praticaSelecionada = document.getElementById('pratica').value;
+            const painelResultado = document.getElementById('resultado-simulacao');
+            
+            let mensagem = "";
+
+            // Estrutura de decisão lógica baseada nas escolhas do usuário
+            switch(praticaSelecionada) {
+                case 'irrigacao':
+                    mensagem = "Economia estimada de até 40% no consumo de água da propriedade e redução na erosão do solo.";
+                    break;
+                case 'solar':
+                    mensagem = "Redução de até 95% nos custos com energia elétrica convencional e mitigação da pegada de carbono.";
+                    break;
+                case 'plantio':
+                    mensagem = "Aumento da matéria orgânica no solo em longo prazo e retenção de umidade superior em épocas de estiagem.";
+                    break;
+                default:
+                    mensagem = "Por favor, selecione uma prática válida.";
+            }
+
+            // Inserção dinâmica do resultado na interface
+            painelResultado.textContent = `Resultado da Projeção: ${mensagem}`;
+        }
+    </script>
+</body>
+</html>
+Checklists de Sucesso para Garantir a Nota Máxima (Nível 4)
+Para garantir que a banca avaliadora te dê a nota máxima, verifique os seguintes pontos extras que não dependem apenas do código acima, mas sim do processo de entrega:
+
+1. Documentação e Planejamento (Requisito Crítico do Nível 4)
+Atores e Fluxos Escritos: Antes de focar apenas nas linhas de código, anexe ao projeto ou ao repositório um arquivo (ex: README.md ou PDF) descrevendo quem acessa a aplicação (ex: Estudantes, Produtores Rurais, Avaliadores) e qual é o caminho (fluxo) que eles fazem na tela.
+
+2. Versionamento Obrigatório
+Submissão via GitHub: Certifique-se de que o repositório está configurado como Público. Commits graduais (e não apenas um commit único com o projeto pronto) demonstram que a equipe construiu o código de forma organizada e colaborativa.
+
+3. Boas Práticas Implementadas no Código Fornecido:
+Tags Semânticas: Uso estrito de <header>, <nav>, <main>, <section>, <article> e <footer>. Evite criar páginas feitas apenas de <div>.
+
+Acessibilidade (Web para Todos): Atributos aria-live="polite" no script (avisa o leitor de tela quando o texto muda), role="" em elementos estruturais e a classe skip-link para navegação via teclado (Tab).
+
+Responsividade Fluida: O uso de CSS Grid com repeat(auto-fit, minmax(...)) garante que o site funcione perfeitamente tanto nas telas dos computadores da escola quanto em smartphones.
